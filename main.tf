@@ -18,6 +18,6 @@ resource "aws_instance" "web" {
     "Name" = "web-2"
   }
   lifecycle {
-    prevent_destroy = true # Default is false
+    prevent_destroy = false # Default is false
   }
 }
